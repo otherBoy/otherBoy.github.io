@@ -1,0 +1,37 @@
+---
+layout: post
+title: Convert Docx to PDF by Unoconv
+date: 2017-09-01 20:00:30.000000000 +09:00
+tags: Linux
+---
+
+
+#### 1. Install LibreOffice
+
+Universal Office Converter (unoconv) is a tool to convert any document format that LibreOffice can import to any document format that LibreOffice can export. Before we use unoconv, we have to install LibreOffice.
+
+Since we cannot use win32com to convert MSword of MSexcel file to pdf on any OS except Windows, unconv is a good solution on Linux or MacOS.
+
+The LibreOffice's official download link: [https://www.libreoffice.org/download/download/](https://www.libreoffice.org/download/download/)
+
+__Do not install the newest version. Due to the newest version of unoconv is 0.7, it only support LibreOffice 4.2.5 or before.__
+
+This version works well on MacOS. [https://downloadarchive.documentfoundation.org/libreoffice/old/4.2.5.2/mac/x86_64/LibreOffice_4.2.5.2_MacOS_x86-64.dmg](https://downloadarchive.documentfoundation.org/libreoffice/old/4.2.5.2/mac/x86_64/LibreOffice_4.2.5.2_MacOS_x86-64.dmg)
+
+#### 2. Install unoconv
+
+There are several ways to install unoconv. Installation by Brew is the best way. Otherwise, you may encounter __Cannot find a suitable pyuno library and python binary combination__ or __can't open file 'unoconv': [Errno 2] No such file or directory__.
+
+```
+brew install unoconv --HEAD
+```
+
+#### 3. Use unoconv
+Unoconv is easy to use. Typically you would convert an ODT(doc, docx, etc) document to PDF by running:
+
+```
+unoconv -f pdf some-file.odt
+```
+
+****
+For more information, visit unoconv on Github. [https://github.com/dagwieers/unoconv](https://github.com/dagwieers/unoconv)
