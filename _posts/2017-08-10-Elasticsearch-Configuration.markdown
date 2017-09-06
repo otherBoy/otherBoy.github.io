@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Elasticsearch Configuration
+title: Elasticsearch-5.x Configuration
 date: 2017-08-10 09:00:01.000000000 +09:00
 tags: Elasticsearch
 ---
