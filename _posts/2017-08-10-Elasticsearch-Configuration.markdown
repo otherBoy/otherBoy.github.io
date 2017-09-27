@@ -81,3 +81,36 @@ cd /opt/elasticsearch/bin/
 ```
 sudo chown -R 'username' /opt/elasticsearch/
 ```
+##### You may also encounter the error below.
+> bootstrap checks failed </br>
+> max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+
+```
+sudo sysctl -w vm.max_map_count=262144
+```
+
+#### 5. Download Kibana package
+Kibana official download link: [https://www.elastic.co/downloads/kibana](https://www.elastic.co/downloads/kibana)
+
+```
+wget https://artifacts.elastic.co/downloads/kibana/kibana-5.4.3-linux-x86_64.tar.gz
+```
+
+#### 6. Unzip Kibana package
+```
+tar -zxvf kibana-5.4.3.tar.gz
+sudo mv kibana-5.4.3/ /opt/kibana
+```
+
+#### 7. Run Kibana
+```
+cd /opt/kibana/bin/
+./kibana
+```
+
+---
+By default, Elasticsearch and Kibana only allow **localhost**. If you want to operate remotely, you need to modify **config/elasticsearch.yml** and **config/kibana.yml**. Uncomment **network.host** and modify **localhost** to **0.0.0.0**, and then reboot Elasticsearch and Kibana.
+
+```
+network.host: 0.0.0.0
+```
