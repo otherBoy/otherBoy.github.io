@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Install Neo4j on Ubuntu-16.04
-date: 2017-08-19 17:20:00.000000000 +09:00
-tags: RabbitMQ
+date: 2017-10-20 15:50:00.000000000 +09:00
+tags: Neo4j
 ---
 
 #### 1. Install Java

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Install RabbitMQ Server on Ubuntu-16.04
-date: 2017-18-19 09:20:00.000000000 +09:00
+date: 2017-10-19 09:20:00.000000000 +09:00
 tags: RabbitMQ
 ---
 
