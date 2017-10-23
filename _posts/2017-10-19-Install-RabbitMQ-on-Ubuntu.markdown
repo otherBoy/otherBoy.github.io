@@ -6,7 +6,7 @@ tags: RabbitMQ
 ---
 
 #### 1. Install Erlang
-Erlang is required to run RabbitMQ server. Therefore, we need to install Erlang first.
+**Erlang** is required to run RabbitMQ server. Therefore, we need to **install Erlang first**.
 
 ```
 sudo apt-get update

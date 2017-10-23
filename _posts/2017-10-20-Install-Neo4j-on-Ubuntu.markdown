@@ -6,7 +6,7 @@ tags: Neo4j
 ---
 
 #### 1. Install Java
-Elasticsearch is built using Lucene Core which is a Java-based indexing and search technology. In order to run Elasticseach, we have to install Java first.<br>
+Neo4j is a graph database management system which is implemented in **Java** and accessible from software written in other languages using the **Cypher Query Language** through a transactional HTTP endpoint, or through the binary 'bolt' protocol. In order to run Neo4j, we have to **install Java first**.<br>
 
 Add repository for JDK
 

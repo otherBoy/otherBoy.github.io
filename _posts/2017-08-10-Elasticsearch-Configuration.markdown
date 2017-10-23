@@ -6,7 +6,7 @@ tags: Elasticsearch
 ---
 
 #### 1. Install Java
-Elasticsearch is built using Lucene Core which is a Java-based indexing and search technology. In order to run Elasticseach, we have to install Java first.<br>
+Elasticsearch is built using **Lucene Core** which is a Java-based indexing and search technology. In order to run Elasticseach, we have to **install Java first**.<br>
 
 Add repository for JDK
 
